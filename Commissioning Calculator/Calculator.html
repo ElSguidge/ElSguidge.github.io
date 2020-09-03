@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>
+Commissioning Formulas V1.0
+
+        </title>
+    </head>
+        <header>
+        <div id = "content">
+        <img src = "https://www.agcoombs.com.au/wp-content/uploads/2020/06/AGC_75years_Logo_Full.png" class= "ribbon"/>
+     </div>
+    </header>
+    <h1>Commissioners' Calculator</h1>
+    <section id = "VSD-calculator">
+        <div id = "VSD-calc">
+        <h2> Calculate VSD speed from l/s (calculated at 105% of design)</h2>
+        <h2 id="answer"></h2>
+        <input type = "number" id = "vsd-a" placeholder="Actual l/s" class="mytext">
+        <input type = "number" id = "vsd-b" placeholder="Design l/s"class="mytext">
+        <input type = "number" id = "vsd-c" placeholder="Current VSD Hz"class="mytext">
+        <button onclick="lsCalculate()" id="calc-button" class = "calc">Calculate</button>
+        </div>
+</section>
+<section id = "VSD-calculator">
+    <div id = "calc-pa">
+    <h2> Calculate air pressure required for design airflow (calculated at 105% of design)</h2>
+    <h2 id="answer-1"></h2>
+    <input type = "number" id = "ls-a" placeholder="Actual flow"class="mytext">
+    <input type = "number" id = "ls-b" placeholder="Design flow"class="mytext">
+    <input type = "number" id = "static-a" placeholder="Actual Pa"class="mytext">
+    <button onclick="paCalculate()"id="calc-button" class = "calc">Calculate</button>
+    </div>
+</section>
+<section id = "VSD-calculator">
+    <div id = "ms-ls">
+    <h2> Calculate flow (l/sec) from velocity (m/sec)</h2>
+    <h2 id="answer-2"></h2>
+    <input type = "number" id = "msec" placeholder="m/sec"class="mytext">
+    <input type = "number" id = "length" placeholder="Length in metres"class="mytext">
+    <input type = "number" id = "width" placeholder="Width in metres"class="mytext">
+    <button onclick="msCalculate()"id="calc-button" class = "calc">Calculate</button>
+    </div>
+</section>
+<section id = "VSD-calculator">
+    <div id = "alerton-box-size">
+    <h2> Calculate VAV box size for Alerton VAV-SD controller</h2>
+    <h2 id="answer-3"></h2>
+    <input type = "number" id = "vavlength" placeholder="Length in centimetres"class="mytext">
+    <input type = "number" id = "vavwidth" placeholder="Width in centimetres"class="mytext">
+    <button onclick="vavCalculate()"id="calc-button" class = "calc">Calculate</button>
+    </div>
+</section>
+<section id = "VSD-calculator">
+    <div id = "round-flow">
+    <h2> Calculate flow factor of a round duct</h2>
+    <h2 id="answer-4"></h2>
+    <input type = "number" id = "diameter" placeholder="Diameter in mm"class="mytext">
+    <button onclick="roundDuctCalculate()"id="calc-button" class = "calc">Calculate</button>
+    </div>
+</section>
+<section id = "VSD-calculator">
+    <div id = "pitot-holes">
+    <h2> Calculate pitot hole duct measurements (type 0 for no insulation)</h2>
+    <h2 id="answer-5"></h2>
+    <input type = "number" id = "duct-size" placeholder="Duct size in mm"class="mytext">
+    <input type = "number" id = "insulation" placeholder="Insulation in mm"class="mytext">
+    <input type = "number" id = "number-of-holes" placeholder="Number of Holes"class="mytext">
+    <button onclick="ductPitotHoleCalculate()"id="calc-button" class = "calc" >Calculate</button>
+    </div>
+</section>
+<section id = "VSD-calculator">
+    <div id = "electrical-VA">
+    <h2> Calculate amps from VA </h2>
+    <h2 id="answer-6"></h2>
+    <input type = "number" id = "voltage" placeholder="Voltage"class="mytext">
+    <input type = "number" id = "va" placeholder="VA"class="mytext">
+    <button onclick="electricalVaCalculate()"id="calc-button" class = "calc" >Calculate</button>
+    </div>
+</section>
+
+    <script src="scripts/calcapp.js"> </script>
+    </body>
+    </html>
+ 

@@ -1,0 +1,59 @@
+
+html{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+body {
+  background-color:#DDDDDA;
+}
+header {
+    text-align: center; 
+    font-weight: bolder;
+
+}
+h1 {
+    font-weight: bolder;
+    text-align: center;
+
+}
+#answer, 
+#answer-1,
+#answer-2,
+#answer-3,
+#answer-4,
+#answer-5,
+#answer-6 {
+    color: #D93A32;
+    font-weight: bolder;
+
+}
+#content {
+    position: relative;
+}
+#content img {
+    position: right;
+    top: 0px;
+    right: 0px;
+}
+.mytext {
+    height: 20px;
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    border-radius: 15px;
+    border-color: black;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    border: orangered;
+}
+.calc {
+    height: 28px;
+    border-radius: 15px;
+    border-color: black;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    background-color:rgba(226, 117, 28, 0.884);
+
+}
+
