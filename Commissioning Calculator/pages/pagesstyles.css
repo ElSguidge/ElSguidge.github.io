@@ -27,6 +27,13 @@ h4{
 p {
     font-size: 24px;
 }
+.topnav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    
+  
+}
 
 .links-button {
     
@@ -44,7 +51,7 @@ color: rgb(32, 218, 63);
 }
 .menu-button {
     
-    color: rgba(226, 117, 28, 0.884);
+    color: rgb(32, 218, 63);
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     font-size: 100%;
@@ -54,16 +61,9 @@ color: rgb(32, 218, 63);
 color:whitesmoke;
 }
 .menu-button:active {
-color: rgb(32, 218, 63);
+color: rgba(226, 117, 28, 0.884);
 }
-#content {
-    position: relative;
-}
-#content img {
-    position: right;
-    top: 0px;
-    right: 0px;
-}
+
 .mytext {
     height: 20px;
     font-weight: bolder;
