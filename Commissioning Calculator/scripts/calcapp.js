@@ -50,7 +50,7 @@ function paCalculate(){
     var field3 = document.getElementById("static-a").value;
     
     var result = parseFloat(field2) / parseFloat(field1);
-    var squared = Math.pow(result,2) * 1.05 * parseFloat(field3);
+    var squared = Math.pow(result,2) * 1.02 * parseFloat(field3);
     var resultSquaredRound = squared.toFixed(2);
 
     if (!isNaN(squared)) {
