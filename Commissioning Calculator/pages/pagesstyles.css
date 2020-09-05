@@ -21,6 +21,12 @@ header {
 h2 {
     text-align: center;
 }
+h4{
+    font-size: 26px;
+}
+p {
+    font-size: 20px;
+}
 
 .links-button {
     
@@ -69,14 +75,8 @@ color: rgb(32, 218, 63);
     text-align: center;
     border: orangered;
 }
-.calc {
-    height: 28px;
-    border-radius: 15px;
-    border-color: black;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    font-weight: bolder;
-    background-color:rgba(226, 117, 28, 0.884);
-
-}
+#HCB_comment_box blockquote {
+    color: black;
+    font-size: large;
+  }
 
