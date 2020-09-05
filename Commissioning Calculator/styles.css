@@ -75,7 +75,7 @@ h1 {
     color:whitesmoke;
 }
 .button:active {
-    color: blue;
+    color: rgb(32, 218, 63);
 }
 .quotes {
     font-weight: bolder;

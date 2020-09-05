@@ -28,7 +28,7 @@ h2 {
 color:whitesmoke;
 }
 .links-button:active {
-color: blue;
+color: rgb(32, 218, 63);
 }
 .menu-button {
     
@@ -42,7 +42,7 @@ color: blue;
 color:whitesmoke;
 }
 .menu-button:active {
-color: blue;
+color: rgb(32, 218, 63);
 }
 #content {
     position: relative;
