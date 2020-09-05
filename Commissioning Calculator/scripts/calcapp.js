@@ -23,7 +23,8 @@ var quotes = [
 '“Do what you can, with what you have, where you are.” –Theodore Roosevelt',
 '“Be yourself; everyone else is already taken.” –Oscar Wilde',
 '“If opportunity doesn\’t knock, build a door.” –Milton Berle',
-'“Strive not to be a success, but rather to be of value.” –Albert Einstein'
+'“Strive not to be a success, but rather to be of value.” –Albert Einstein',
+'"Give me the baby no pain" -Scott Dolman'
 ]
 function newQuote() {
 var randomNumber = Math.floor(Math.random() * (quotes.length));
