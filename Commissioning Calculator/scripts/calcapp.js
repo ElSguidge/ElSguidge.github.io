@@ -24,7 +24,7 @@ var quotes = [
 '“Be yourself; everyone else is already taken.” –Oscar Wilde',
 '“If opportunity doesn\’t knock, build a door.” –Milton Berle',
 '“Strive not to be a success, but rather to be of value.” –Albert Einstein',
-'"Give me the baby no pain" -Scott Dolman'
+'"Give me the baby no pain." -Scott Dolman'
 ]
 function newQuote() {
 var randomNumber = Math.floor(Math.random() * (quotes.length));
