@@ -6,7 +6,7 @@ html{
 body {
   background-color:#DDDDDA;
     background-image:url("https://www.agcoombs.com.au/wp-content/uploads/2020/06/AGC_75years_Logo_Full.png");
-    background-position: right top left;
+    background-position: absolute; top: 12pt; left: 24pt; z-index: 100;
     background-size: 20%;
     background-repeat:no-repeat;background-attachment:fixed;
     
@@ -27,13 +27,6 @@ h4{
 p {
     font-size: 24px;
 }
-.topnav{
-    position: fixed;
-    left: 0;
-    right: 0;
-    
-  
-}
 
 .links-button {
     
@@ -49,32 +42,28 @@ color:whitesmoke;
 .links-button:active {
 color: rgb(32, 218, 63);
 }
+.topnav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    }
 .menu-button {
     
-    color: rgb(32, 218, 63);
+    color: rgb(114, 56, 148);
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
-    font-size: 100%;
+    font-size: 130%;
     padding: 30px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent
 }
 .menu-button:hover {
 color:whitesmoke;
 }
 .menu-button:active {
-color: rgba(226, 117, 28, 0.884);
+color: rgb(32, 218, 63);
 }
 
-.mytext {
-    height: 20px;
-    font-weight: bolder;
-    font-size: large;
-    text-align: center;
-    border-radius: 15px;
-    border-color: black;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    border: orangered;
-}
 #HCB_comment_box blockquote {
     color: black;
     font-size: 18px;
