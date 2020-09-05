@@ -1,5 +1,35 @@
 'use strict';
 
+var quotes = [
+'"Intelligence is the ability to adapt to change." —Stephen Hawking',
+'"Do or do not. There is no try." —Yoda, The Empire Strikes Back',
+'"If something is wrong, fix it now. But train yourself not to worry, worry fixes nothing." — Ernest Hemingway',
+'“First they ignore you, then they ridicule you, then they fight you, and then you win.” —Mahatma Gandhi',
+' “The man who moves a mountain begins by carrying away small stones.“ —Confucius',
+'“Whether you think you can or think you can\’t, you\’re right.” —Henry Ford',
+'“My attitude is that if you push me towards something that you think is a weakness, then I will turn that perceived weakness into a strength.” —Michael Jordan',
+'“Things may come to those who wait, but only the things left by those who hustle.”  —Abraham Lincoln',
+'“Opportunity is missed by most people because it is dressed in overalls and looks like work.” —Thomas Edison',
+'“It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.” —Charles Darwin',
+'“Learn the rules like a pro, so you can break them like an artist.“ —Pablo Picasso',
+'“Success consists of going from failure to failure without loss of enthusiasm.” —Winston Churchill',
+'“We may encounter many defeats but we must not be defeated.” —Maya Angelou',
+'“I didn\’t fail the test. I just found 100 ways to do it wrong.” —Benjamin Franklin',
+'“Failure is the condiment that gives success its flavor.” —Truman Capote',
+'“Life is a shipwreck but we must not forget to sing in the lifeboats.” —Voltaire',
+'“Out of clutter, find simplicity. From discord, find harmony. In the middle of difficulty lies opportunity.” —Albert Einstein',
+'"I can take it. The tougher it gets, the cooler I get." -Richard Nixon.',
+'“That which does not kill us makes us stronger.” –Friedrich Nietzsche',
+'“Do what you can, with what you have, where you are.” –Theodore Roosevelt',
+'“Be yourself; everyone else is already taken.” –Oscar Wilde',
+'“If opportunity doesn\’t knock, build a door.” –Milton Berle',
+'“Strive not to be a success, but rather to be of value.” –Albert Einstein'
+]
+function newQuote() {
+var randomNumber = Math.floor(Math.random() * (quotes.length));
+document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber];
+}
+document.addEventListener("load", newQuote());
 
 function lsCalculate(){
     var field1 = document.getElementById("vsd-a").value;

@@ -8,24 +8,41 @@ body {
 }
 header {
     text-align: center; 
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: 50px;
 
 }
-h1 {
-    font-weight: bolder;
+h2 {
     text-align: center;
-
 }
-#answer, 
-#answer-1,
-#answer-2,
-#answer-3,
-#answer-4,
-#answer-5,
-#answer-6 {
-    color: #D93A32;
-    font-weight: bolder;
 
+.links-button {
+    
+    color: rgba(226, 117, 28, 0.884);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 180%;
+    padding: 30px;
+}
+.links-button:hover {
+color:whitesmoke;
+}
+.links-button:active {
+color: blue;
+}
+.menu-button {
+    
+    color: rgba(226, 117, 28, 0.884);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 100%;
+    padding: 30px;
+}
+.menu-button:hover {
+color:whitesmoke;
+}
+.menu-button:active {
+color: blue;
 }
 #content {
     position: relative;
@@ -56,30 +73,4 @@ h1 {
     background-color:rgba(226, 117, 28, 0.884);
 
 }
-.calc:hover {
-    background-color: rgb(32, 218, 63);
-}
-.calculatorcom {
-    text-decoration: underline;
-}
-
-.button {
-    
-        color: rgba(226, 117, 28, 0.884);
-        font-family: 'Raleway', sans-serif;
-        font-weight: bolder;
-        font-size: 180%;
-        padding: 30px;
-}
-.button:hover {
-    color:whitesmoke;
-}
-.button:active {
-    color: blue;
-}
-.quotes {
-    font-weight: bolder;
-}
-
-
 
