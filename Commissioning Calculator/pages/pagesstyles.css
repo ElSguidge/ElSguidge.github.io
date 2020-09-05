@@ -7,7 +7,7 @@ body {
   background-color:#DDDDDA;
     background-image:url("https://www.agcoombs.com.au/wp-content/uploads/2020/06/AGC_75years_Logo_Full.png");
     background-size: 20%;
-    background-repeat:no-repeat;background-attachment:fixed;background-position-x: 0.7cm;  background-position-y: 0.85cm;
+    background-repeat:no-repeat;background-attachment:fixed;background-position-x: 0.4cm;  background-position-y: 0.85cm;
 }
 header {
     text-align: center; 
@@ -63,6 +63,5 @@ color: rgb(32, 218, 63);
 #HCB_comment_box blockquote {
     color: black;
     font-size: 18px;
-    font-weight: bold;
   }
 
