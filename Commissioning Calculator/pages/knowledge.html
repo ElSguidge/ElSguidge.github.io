@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="pagesstyles.css">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <title>
+            Commissioning Formulas V1.1
+            
+                    </title>
+        </head>
+        <header>
+            Knowledge<hr>
+        </header>
+        <div class="topnav" id = "nav-buttons">
+            <a class = "menu-button" href="../index.html">Home</a>
+            <a class = "menu-button" href="vsds.html">VSD's</a>
+            <a class = "menu-button" href="valves.html">Valves</a>
+            <a class = "menu-button" href="ecmotors.html">EC motors</a>
+            <a class = "menu-button" href="temperzone.html">Temperzone</a>
+            </div>
+
+        <body>
+            <div>
+                <h2>Circuit Simulator</h2>
+                <p class= "knowledgedescriptor" id="knowledge">
+This javascript applet is an electronic circuit simulator.  
+When the applet starts up you will see a simple LRC circuit. The green color indicates positive voltage.  The gray color indicates ground.  A red color indicates negative voltage.  The moving yellow dots indicate current.
+To turn a switch on or off, just click on it.  If you move the mouse over any component of the circuit, 
+you will see a short description of that component and its current state in the lower right corner of the window.  
+To modify a component (say, to change the resistance of one of the resistors), move the mouse over it, click the right mouse button (or control-click, if you have a Mac) and select “Edit”.<br>
+
+There are three graphs at the bottom of the window; these act like oscilloscopes, each one showing the voltage and current across a particular component.  Voltage is shown in green, and current is shown in yellow.  The current may not be visible if the voltage graph is on top of it.  The peak value of the voltage in the scope window is also shown.  Move the mouse over one of the scope views, and the component it is graphing will be highlighted.  To modify or remove a scope, click the right mouse button over it.  To view a component in the scope, click the right mouse button over the component and select “View in Scope”.
+If the simulation is moving too slowly or too quickly, you can adjust the speed with the “Simulation Speed” slider.<br>
+<br>
+In order to simulate the use of relays, the only electrical understanding that the reader really needs to have are
+as follows:<br><br>
+o All circuits must be complete, closed and have at least one resistance source for it to do anything.<br><br>
+o While the software will allow for “shorted” circuits, it will warn the user that a circuit exists
+without a source of resistance.<br><br>
+o A closed circuit has at least one path in which the electricity can flow in a continuous manner
+from the power source, through a source of resistance and either back to the power source or
+to ground.<br><br>
+o The software will not allow circuits that are not closed to run correctly unless the break is due to
+a switch.<br><br>
+o All connections between wires must terminate at the point of connection.<br><br>
+o Wires that cross are not considered to be connected.<br><br>
+o Wires are considered to have a negligible level of resistance. If wire resistance is required, a
+resistor with an appropriately small value can be added.
+
+                </p>
+            </div>
+            <div><br>
+                        <iframe src="https://www.falstad.com/circuit/circuitjs.html" width="1000" height="500"></iframe>
+                    </div>
+                    <div><br>
+                        <h2>Primary and Secondary Water Circuits with decoupler</h2><br>
+                        <img src="https://b9i5f9p8.stackpathcdn.com/wp-content/uploads/2017/05/header.png">
+                        <p class="decoupler" id="decoupler">
+The primary and secondary circuits are connected via a pipe known as the “Low Loss Header” it is also sometimes referred 
+to as the “Decoupler” or “Common Header”. The primary water flows into this to provide heated or chilled water to the 
+secondary circuits. When the building is at maximum load and is demanding 100% of the system’s designed capacity, all 
+the primary water will flow into the secondary circuits. This is very rare though and is usually only 1% of the year. 
+The other 99% of the year the system will be operating at part load, in this scenario only some of the primary water 
+will flow into the secondary circuits and some will pass straight through and head back to the chiller or boilers.<br><br>
+The primary circuit will often have pumps running at a constant speed. Newer designs may have variable flow primary 
+pumps although a minimum flow rate must be ensured. In both cases the chiller or boiler manufacturers will specify 
+a minimum flow rate that must be achieved, if the flow rate falls below this, the chiller or boiler can freeze or 
+overheat which may result in catastrophic failure.
+                        </p>
+                    </div>
+                    <footer><hr>
+                        <div class="topnav" id = "nav-buttons">
+                            <a class = "menu-button" href="../index.html">Home</a>
+                            <a class = "menu-button" href="vsds.html">VSD's</a>
+                            <a class = "menu-button" href="valves.html">Valves</a>
+                            <a class = "menu-button" href="ecmotors.html">EC motors</a>
+                            <a class = "menu-button" href="temperzone.html">Temperzone</a>
+                            </div>
+                    </footer>
+        </body>
+
+</html>
