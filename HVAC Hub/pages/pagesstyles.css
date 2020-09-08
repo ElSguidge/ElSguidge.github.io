@@ -5,9 +5,10 @@ html{
 }
 body {
   background-color:#DDDDDA;
-    background-image:url("https://www.agcoombs.com.au/wp-content/uploads/2020/06/AGC_75years_Logo_Full.png");
-    background-size: 15%;
-    background-repeat:no-repeat;background-position-x: 0.4cm;  background-position-y: 0.85cm;
+    background-image: url("../hvachublogo.png");
+    background-size: 7%;
+    background-repeat:no-repeat;background-position-x: left;  background-position-y: top;
+    
 }
 header {
     text-align: center; 
@@ -29,13 +30,13 @@ p {
 }
 .knowledgedescriptor{
     font-size: 18px;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 .decoupler {
     font-size:18px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .links-button {

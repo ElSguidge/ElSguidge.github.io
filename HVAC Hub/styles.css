@@ -16,12 +16,14 @@ h1 {
     text-align: center;
 
 }
-h2 {
-    
+.ribbon {
+    font-weight: 900px;
 }
+
 .quotes {
     
     font-size: larger;
+    font-weight: bolder;
 }
 #answer, 
 #answer-1,
@@ -85,9 +87,7 @@ h2 {
 .button:active {
     color: rgb(32, 218, 63);
 }
-.quotes {
-    font-weight: bolder;
-}
+
 
 
 
