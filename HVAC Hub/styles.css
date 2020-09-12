@@ -3,14 +3,15 @@ html{
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
+
 body {
   background-color:#DDDDDA;
 }
 header {
     text-align: center; 
     font-weight: bolder;
-
 }
+
 h1 {
     font-weight: bolder;
     text-align: center;
@@ -72,7 +73,7 @@ h1 {
     text-decoration: underline;
 }
 
-.button {
+.menubutton {
     
         color: rgb(114, 56, 148);
         font-family: 'Raleway', sans-serif;
@@ -81,12 +82,10 @@ h1 {
         padding: 30px;
         text-decoration: none;
 }
-.button:hover {
+.menubutton:hover {
     color:whitesmoke;
 }
-.button:active {
-    color: rgb(32, 218, 63);
-}
+
 
 
 

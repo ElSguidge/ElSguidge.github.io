@@ -32,6 +32,7 @@ document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber];
 }
 document.addEventListener("load", newQuote());
 
+
 function lsCalculate(){
     var field1 = document.getElementById("vsd-a").value;
     var field2 = document.getElementById("vsd-b").value;

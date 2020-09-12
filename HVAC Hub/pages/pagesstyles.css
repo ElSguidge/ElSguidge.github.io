@@ -70,12 +70,50 @@ color: rgb(32, 218, 63);
 .menu-button:hover {
 color:whitesmoke;
 }
-.menu-button:active {
-color: rgb(32, 218, 63);
-}
+
 
 #HCB_comment_box blockquote {
     color: black;
     font-size: 18px;
   }
+
+  #answer, 
+#answer-1,
+#answer-2,
+#answer-3,
+#answer-4,
+#answer-5,
+#answer-6,
+#answer-7 {
+    color: #D93A32;
+    font-weight: bolder;
+
+}
+.mytext {
+    height: 20px;
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    border-radius: 15px;
+    border-color: black;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    border: orangered;
+}
+.calc {
+    height: 28px;
+    border-radius: 15px;
+    border-color: black;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    background-color:rgba(226, 117, 28, 0.884);
+
+}
+.calc:hover {
+    background-color: rgb(32, 218, 63);
+}
+.calculatorcom {
+    text-decoration: underline;
+}
 
