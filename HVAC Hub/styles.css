@@ -61,7 +61,7 @@ h1 {
 }
 #content {
     position: absolute;
-    transition: margin-left 0.7s;
+    transition: 0.7s;
     overflow-x: hidden;
     width: 100%;    
 }
