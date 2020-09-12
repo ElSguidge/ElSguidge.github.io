@@ -8,7 +8,7 @@ body {
     background-image: url("../hvachublogo.png");
     background-size: 7%;
     background-repeat:no-repeat;background-position-x: left;  background-position-y: top;
-    
+    overflow-x: hidden;
 }
 header {
     text-align: center; 
@@ -28,6 +28,51 @@ h4{
 p {
     font-size: 24px;
 }
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: coral;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+}
+.nav a {
+    display: block;
+    padding: 20px 30px;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav a:hover {
+    color: rgb(153, 153, 161);
+    transition: 0.4s;
+}
+.nav .close{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    margin-left: 30px;
+    font-size: 30px;
+}
+.slide a {
+    position: fixed;
+    font-size: 36px;
+    left: 15px;
+    color: black;
+}
+#content {
+    position: absolute;
+    transition: margin-left 0.7s;
+    overflow-x: hidden;
+    width: 100%;    
+}
 .knowledgedescriptor{
     font-size: 18px;
     text-align: center;
@@ -44,7 +89,7 @@ p {
     color: rgba(226, 117, 28, 0.884);
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
-    font-size: 180%;
+    font-size: 150%;
     padding: 30px;
 }
 .links-button:hover {
@@ -53,24 +98,6 @@ color:whitesmoke;
 .links-button:active {
 color: rgb(32, 218, 63);
 }
-.topnav {
-    left: 0;
-    right: 0;
-    }
-.menu-button {
-    
-    color: rgb(114, 56, 148);
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
-    font-size: 130%;
-    padding: 30px;
-    text-decoration: none;
-    border-bottom: 3px solid transparent
-}
-.menu-button:hover {
-color:whitesmoke;
-}
-
 
 #HCB_comment_box blockquote {
     color: black;

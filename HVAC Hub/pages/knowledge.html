@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d5ae091cf2.js" crossorigin="anonymous"></script>
         <title>
             HVAC Hub
         </title>
@@ -13,15 +14,26 @@
             Knowledge<hr>
             
         </header>
-        <div class="topnav" id = "nav-buttons">
-            <a class = "menu-button" href="../index.html">Home</a>
-            <a class = "menu-button" href="vsds.html">VSD's</a>
-            <a class = "menu-button" href="valves.html">Valves</a>
-            <a class = "menu-button" href="ecmotors.html">EC motors</a>
-            <a class = "menu-button" href="temperzone.html">Temperzone</a>
-            </div>
 
         <body>
+            <div id ="content">
+                <span class="slide">
+                    <a href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                </span>
+    
+                <div id="menu" class="nav">
+                    <a href="#" class="close" onclick="closeSlideMenu()">
+                    <i class="fas fa-times"></i>
+                    </a>
+                    <a href="../index.html">Home</a>
+                    <a href= "vsds.html">VSD's</a>
+                    <a href="valves.html">Valves</a>
+                    <a href="ecmotors.html">EC Motors</a>
+                    <a href="temperzone.html">Temperzone</a>
+                </div>
+            </div>
             <div>
                 <h2>Circuit Simulator</h2>
                 <p class= "knowledgedescriptor" id="knowledge">
@@ -63,15 +75,6 @@ a minimum flow rate that must be achieved, if the flow rate falls below this, th
 overheat which may result in catastrophic failure.
                         </p>
                     </div>
-                    <footer><hr>
-                        <div class="topnav" id = "nav-buttons">
-                            <a class = "menu-button" href="../index.html">Home</a>
-                            <a class = "menu-button" href="vsds.html">VSD's</a>
-                            <a class = "menu-button" href="valves.html">Valves</a>
-                            <a class = "menu-button" href="ecmotors.html">EC motors</a>
-                            <a class = "menu-button" href="temperzone.html">Temperzone</a>
-                            </div>
-                    </footer>
         </body>
-
+        <script src="../scripts/watercalcs.js"></script>
 </html>

@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" rel="stylesheet">
         <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/d5ae091cf2.js" crossorigin="anonymous"></script>
         <title>
 HVAC Hub
 
@@ -15,14 +16,26 @@ HVAC Hub
         </div>
     </header>
     <body>
-    <div class="topnav" id = "nav-buttons">
-        <a class = "menubutton" href="pages/vsds.html">VSD's</a>
-        <a class = "menubutton" href="pages/valves.html">Valves</a>
-        <a class = "menubutton" href="pages/ecmotors.html">EC motors</a>
-        <a class = "menubutton" href="pages/temperzone.html">Temperzone</a>
-        <a class = "menubutton" href="pages/knowledge.html">Knowledge</a><hr>
-        <br>
-        <div id = "quoteDisplay" class= "quotes"> </div><br>
+    
+        <div id ="content">
+            <span class="slide">
+                <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+            </span>
+
+            <div id="menu" class="nav">
+                <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+                </a>
+                <a href="pages/vsds.html">VSD's</a>
+                <a href= "pages/valves.html">Valves</a>
+                <a href="pages/ecmotors.html">EC motors</a>
+                <a href="pages/temperzone.html">Temperzone</a>
+                <a href="pages/knowledge.html">Knowledge</a>
+            </div>
+        </div>
+        <div id = "quoteDisplay" class= "quotes"> </div><br><hr>
         <h1 class = "calculatorcom">Commissioners' Calculator</h1>
         </div>
     <section id = "VSD-calculator">
@@ -91,17 +104,9 @@ HVAC Hub
     <button onclick="electricalVaCalculate()"id="calc-button" class = "calc" >Calculate</button>
     </div>
 </section>
-<footer><hr>
-    <div class="topnav" id = "nav-buttons">
-        <a class = "menubutton" href="pages/vsds.html">VSD's</a>
-        <a class = "menubutton" href="pages/valves.html">Valves</a>
-        <a class = "menubutton" href="pages/ecmotors.html">EC motors</a>
-        <a class = "menubutton" href="pages/temperzone.html">Temperzone</a>
-        <a class = "menubutton" href="pages/knowledge.html">Knowledge</a>
-</footer>
-
-    </body>
+ </body>
     <script src="scripts/calcapp.js"></script>
+    <script src="scripts/watercalcs.js"></script>
     
     </html>
  

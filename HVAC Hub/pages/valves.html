@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="pagesstyles.css">
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        
+        <script src="https://kit.fontawesome.com/d5ae091cf2.js" crossorigin="anonymous"></script>
         <title>
             HVAC Hub
             </title>
@@ -12,14 +12,25 @@
         <header>
             Valves <hr>
         </header>
-        <div class="topnav" id = "nav-buttons">
-            <a class = "menu-button" href="../index.html">Home</a>
-            <a class = "menu-button" href="vsds.html">VSD's</a>
-            <a class = "menu-button" href="ecmotors.html">EC motors</a>
-            <a class = "menu-button" href="temperzone.html">Temperzone</a>
-            <a class = "menu-button" href="knowledge.html">Knowledge</a>
-            </div>
         <body>
+            <div id ="content">
+                <span class="slide">
+                    <a href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                </span>
+    
+                <div id="menu" class="nav">
+                    <a href="#" class="close" onclick="closeSlideMenu()">
+                    <i class="fas fa-times"></i>
+                    </a>
+                    <a href="../index.html">Home</a>
+                    <a href="vsds.html">VSD's</a>
+                    <a href="ecmotors.html">EC Motors</a>
+                    <a href="temperzone.html">Temperzone</a>
+                    <a href="knowledge.html">Knowledge</a>
+                </div>
+            </div>
             <div>
             <h1 class = "calculatorcom">Valve calculations and conversions</h1>
         </div>

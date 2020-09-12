@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d5ae091cf2.js" crossorigin="anonymous"></script>
         <title>
             HVAC Hub
             </title>
@@ -12,15 +13,27 @@
         <header>
             Variable Speed Drives <hr>
         </header>
-        <div class="topnav" id = "nav-buttons">
-            <a class = "menu-button" href="../index.html">Home</a>
-            <a class = "menu-button" href="valves.html">Valves</a>
-            <a class = "menu-button" href="ecmotors.html">EC motors</a>
-            <a class = "menu-button" href="temperzone.html">Temperzone</a>
-            <a class = "menu-button" href="knowledge.html">Knowledge</a>
-            </div>
+
         <body>
-            <div><hr><br>
+            <div id ="content">
+                <span class="slide">
+                    <a href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                </span>
+    
+                <div id="menu" class="nav">
+                    <a href="#" class="close" onclick="closeSlideMenu()">
+                    <i class="fas fa-times"></i>
+                    </a>
+                    <a href="../index.html">Home</a>
+                    <a href="valves.html">Valves</a>
+                    <a href="ecmotors.html">EC Motors</a>
+                    <a href="temperzone.html">Temperzone</a>
+                    <a href="knowledge.html">Knowledge</a>
+                </div>
+            </div>
+            <div><br>
                 <h2>Operating manual links: </h2>
                 <a class = "links-button" href= "http://files.danfoss.com/download/Drives/MG11AK02.pdf" target="blank">Danfoss FC-102</a>
                 <br>
@@ -63,16 +76,7 @@
         if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);
         })(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
-<footer><hr>
-    <div class="topnav" id = "nav-buttons">
-        <a class = "menu-button" href="../index.html">Home</a>
-        <a class = "menu-button" href="valves.html">Valves</a>
-        <a class = "menu-button" href="ecmotors.html">EC motors</a>
-        <a class = "menu-button" href="temperzone.html">Temperzone</a>
-        <a class = "menu-button" href="knowledge.html">Knowledge</a>
-        </div>
-</footer>
             
         </body>
-
+        <script src="../scripts/watercalcs.js"></script>
 </html>

@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="pagesstyles.css">
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d5ae091cf2.js" crossorigin="anonymous"></script>
         <title>
             HVAC Hub
             </title>
@@ -11,19 +12,29 @@
         <header>
             EC Motors<hr>
         </header>
-        <div class="topnav" id = "nav-buttons">
-            <a class = "menu-button" href="../index.html">Home</a>
-            <a class = "menu-button" href="vsds.html">VSD's</a>
-            <a class = "menu-button" href="valves.html">Valves</a>
-            <a class = "menu-button" href="temperzone.html">Temperzone</a>
-            <a class = "menu-button" href="knowledge.html">Knowledge</a>
+       <body>
+            <div id ="content">
+                <span class="slide">
+                    <a href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                </span>
+    
+                <div id="menu" class="nav">
+                    <a href="#" class="close" onclick="closeSlideMenu()">
+                    <i class="fas fa-times"></i>
+                    </a>
+                    <a href="../index.html">Home</a>
+                    <a href= "vsds.html">VSD's</a>
+                    <a href="valves.html">Valves</a>
+                    <a href="temperzone.html">Temperzone</a>
+                    <a href="knowledge.html">Knowledge</a>
+                </div>
             </div>
-
-        <body>
             <div><br>
                 <h2>Steady on soldier! <br>
                     We're working on producing more content....watch this space!</h2>
                     </div>
         </body>
-
+        <script src="../scripts/watercalcs.js"></script>
 </html>
