@@ -48,7 +48,7 @@ h2 {
     color: whitesmoke;
 }
 .nav a:hover {
-    color: rgb(153, 153, 161);
+    color: rgb(0, 1, 8);
     transition: 0.4s;
 }
 .nav .close{
@@ -60,7 +60,7 @@ h2 {
 }
 .slide a {
     position: fixed;
-    font-size: 36px;
+    font-size: 60px;
     top: 25px;
     left: 15px;
     color: black;
