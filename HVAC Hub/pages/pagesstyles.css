@@ -31,12 +31,9 @@ p {
 }
 .valvetype {
     display: flex;
-    
     position: absolute;
     left: 135px;
     text-align: center;
- 
-
 }
 .form-control-lg {
    height: 50px;
