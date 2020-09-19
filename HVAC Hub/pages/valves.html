@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="pagesstyles.css">
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -31,80 +32,98 @@
                     <a href="knowledge.html">Knowledge</a>
                 </div>
             </div>
-            <div>
-            <h1 class = "calculatorcom">Valve calculations and conversions</h1>
+        <div>
+        <h1 class = "calculatorcom">Valve calculations and conversions</h1><br><br>
+        <h2>Oventropp valve Kv finder</h2><br>
+        <h2 id="kvanswer"></h2>
         </div>
-            <section id = "valve-calculator">
+        <div class ="valvetype">
+        <select class="form-control"id='firstList' name='firstList' onchange="getValveSize()">
+        <<option disabled selected>Type</option>
+        </select> 
+	    <select class="form-control"  id='secondList' name='secondList' onchange="getTurns()">
+        <<option disabled selected>DN</option>
+        </select>
+        <select class="form-control"id='thirdList' name='thirdList' >
+        <<option disabled selected>Turns</option>
+        </select>
+        <button onclick="findInArray()"class= "submit">Submit</button>
+
+
+    </div><br><br><br>
+<section id = "valve-calculator">
                 <div id = "kv-calculator">
-                <h2> Calculate valve Kv</h2>
+                <h2> Calculate valve Kv</h2><br>
                 <h2 id="answer"></h2>
                 <input type = "number" id = "kva" placeholder="q (l/s)" class="mytext">
                 <input type = "number" id = "kvb" placeholder="p (kPa)"class="mytext">
-                <button onclick="kvCalculate()" id="calc-button" class = "calc">Calculate</button>
+                <button onclick="kvCalculate()" id="calc-button" class = "calc">Calculate</button><br>
                 </div>
         </section><br>
-        <h2> Calculate flow in l/s</h2>
+        <h2> Calculate flow in l/s</h2><br>
                 <h2 id="answer-1"></h2>
                 <input type = "number" id = "kv" placeholder="Kv" class="mytext">
                 <input type = "number" id = "press" placeholder="p (kPa)"class="mytext">
-                <button onclick="ls_Calculate()" id="calc-button" class = "calc">Calculate</button>
+                <button onclick="ls_Calculate()" id="calc-button" class = "calc">Calculate</button><br>
                 </div>
         </section><br>
-        <h2> Convert m3/h to l/s</h2>
+        <h2> Convert m3/h to l/s</h2><br>
                 <h2 id="answer-2"></h2>
                 <input type = "number" id = "m3h" placeholder="m3/h" class="mytext">
-                <button onclick="ls_ConvertCalculate()" id="calc-button" class = "calc">Calculate</button>
+                <button onclick="ls_ConvertCalculate()" id="calc-button" class = "calc">Calculate</button><br>
                 </div>
         </section><br>
-        <h2> Convert kPa to psi (pounds force per square inch)</h2>
+        <h2> Convert kPa to psi (pounds force per square inch)</h2><br>
                 <h2 id="answer-3"></h2>
                 <input type = "number" id = "kPa" placeholder="kPa" class="mytext">
-                <button onclick="psi_ConvertCalculate()" id="calc-button" class="calc">Calculate</button>
+                <button onclick="psi_ConvertCalculate()" id="calc-button" class="calc">Calculate</button><br>
                 </div>
         </section><br>
-        <h2> Convert DN size to valve size in inches</h2>
+        <h2> Convert DN size to valve size in inches</h2><br>
         <h2 id="answer-4"></h2>
         <input type = "number" id = "dn" placeholder="DN in mm" class="mytext">
-        <button onclick="dn_ConvertCalculate()" id="calc-button" class="calc">Calculate</button>
+        <button onclick="dn_ConvertCalculate()" id="calc-button" class="calc">Calculate</button><br>
         </div>
 </section><br>
-<h2> Convert US gpm (gallons per minute) to l/s</h2>
+<h2> Convert US gpm (gallons per minute) to l/s</h2><br>
 <h2 id="answer-5"></h2>
 <input type = "number" id = "gpmUs" placeholder="US gpm" class="mytext">
-<button onclick="gpmUs_ConvertCalculate()" id="calc-button" class="calc">Calculate</button>
+<button onclick="gpmUs_ConvertCalculate()" id="calc-button" class="calc">Calculate</button><br>
 </div>
 </section><br>
-<h2> Convert Imperial gpm (gallons per minute) to l/s</h2>
+<h2> Convert Imperial gpm (gallons per minute) to l/s</h2><br>
 <h2 id="answer-6"></h2>
 <input type = "number" id = "impgpm" placeholder="Imperial gpm" class="mytext">
-<button onclick="impGpm_ConvertCalculate()" id="calc-button" class="calc">Calculate</button>
+<button onclick="impGpm_ConvertCalculate()" id="calc-button" class="calc">Calculate</button><br>
 </div>
 </section><br>
-<h2> Convert cfm (cubic feet per minute) to l/s</h2>
+<h2> Convert cfm (cubic feet per minute) to l/s</h2><br>
 <h2 id="answer-7"></h2>
 <input type = "number" id = "cfm" placeholder="Cubic feet per minute" class="mytext">
-<button onclick="cfm_ConvertCalculate()" id="calc-button" class="calc">Calculate</button>
+<button onclick="cfm_ConvertCalculate()" id="calc-button" class="calc">Calculate</button><br>
 </div>
 </section><br>
 <div><br>
 </div><br>
-<a class = "links-button" href = "http://oventrop-na.net/calc/BalancingValveCalculator/OPEN_THIS.html" target="_blank">Oventropp Valve Balancing Calculator</a><br><br>
 
-        <h1>PICV manual quick download links: </h2>
-            <h2>IMI - TA</h2>
+        <h1>PICV manual quick download links: </h2><br>
+            <h2>IMI - TA</h2><br>
 <a class = "links-button" href= "https://imihydronic.blob.core.windows.net/resources/Documents/Instructions/IMI_TA/Low/TA-Modulator_DN15-32_instruction.pdf"target="_blank">TA Modulator DN 15-32 Instructions</a><br>
 <a class = "links-button" href= "https://imihydronic.blob.core.windows.net/resources/Documents/Instructions/IMI_TA/Low/TA-Modulator_DN40-50_instruction.pdf"target="_blank">TA Modulator DN 40-50 Instructions</a> <br>      
-<a class = "links-button" href= "https://imihydronic.blob.core.windows.net/resources/Documents/Instructions/IMI_TA/Low/TA-Modulator_DN65-150_instruction.pdf"target="_blank">TA Modulator DN 65-150 Instructions</a><br>
-            <h2>Belimo PICV quick links</h2>
+<a class = "links-button" href= "https://imihydronic.blob.core.windows.net/resources/Documents/Instructions/IMI_TA/Low/TA-Modulator_DN65-150_instruction.pdf"target="_blank">TA Modulator DN 65-150 Instructions</a><br><br>
+            <h2>Belimo PICV quick links</h2><br>
 <a class = "links-button" href= "http://www.belimo.eu/pdf/eu/14_pn16_control_epiv-thread.pdf" target="_blank">2 way PI Ball Valve (EPIV) DN 15-50 Internal thread</a><br>
 <a class = "links-button" href= "http://www.belimo.eu/pdf/eu/15_pn16_control_epiv-flange.pdf" target="_blank">2 way PI Ball Valve (EPIV) DN 65-150 Flange</a><br>
 <a class = "links-button" href= "http://www.belimo.eu/pdf/eu/16_pn16_control_engergy-thread.pdf" target="_blank">2 way PI Belimo Energy Valve DN 15-50 Internal thread</a><br>
 <a class = "links-button" href= "http://www.belimo.eu/pdf/eu/17_pn16_control_energy-flange.pdf" target="_blank">2 way Belimo Energy Valve DN 65-150 Flange</a><br>
 <a class = "links-button" href= "http://www.belimo.eu/pdf/eu/18_pn25_open-close_piflv.pdf" target="_blank">2 way PI Ball Valve (PIFLV) DN 15-25 Internal thread</a><br>
-<a class = "links-button" href= "http://www.belimo.eu/pdf/eu/19_pn25_control_piqcv.pdf" target="_blank">2 way PI Ball Valve (PIQCV) DN 15-20 Internal thread</a><br>
-<h3> For more links try here:</h3>
+<a class = "links-button" href= "http://www.belimo.eu/pdf/eu/19_pn25_control_piqcv.pdf" target="_blank">2 way PI Ball Valve (PIQCV) DN 15-20 Internal thread</a><br><br>
+<h3> For more links try here:</h3><br>
 <a class = "links-button" href= "http://www.belimo-bg.com/water-solutions/pressure-independent-valves/" target="_blank">For a more complete Belimo PICV download list click here</a>
 </body>
-        <script src="../scripts/watercalcs.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="../scripts/watercalcs.js"></script>
 
 </html>
