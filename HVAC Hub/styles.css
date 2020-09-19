@@ -94,9 +94,9 @@ img {
     right: 0px;
 }
 .mytext {
-    height: 20px;
+    height: 40px;
     font-weight: bolder;
-    font-size: large;
+    font-size: larger;
     text-align: center;
     border-radius: 15px;
     border-color: black;
@@ -105,7 +105,7 @@ img {
     border: orangered;
 }
 .calc {
-    height: 28px;
+    height: 40px;
     border-radius: 15px;
     border-color: black;
     font-family: 'Raleway', sans-serif;

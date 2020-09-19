@@ -38,6 +38,12 @@ p {
     margin: 0 auto;
 
 }
+.form-control {
+   height: 50px;
+   width: 70%;
+  
+
+}
 
 
 .nav {
@@ -129,9 +135,9 @@ color: rgb(32, 218, 63);
 
 }
 .mytext {
-    height: 20px;
+    height: 40px;
     font-weight: bolder;
-    font-size: large;
+    font-size: larger;
     text-align: center;
     border-radius: 15px;
     border-color: black;
@@ -140,7 +146,7 @@ color: rgb(32, 218, 63);
     border: orangered;
 }
 .calc {
-    height: 28px;
+    height: 40px;
     border-radius: 15px;
     border-color: black;
     font-family: 'Raleway', sans-serif;
