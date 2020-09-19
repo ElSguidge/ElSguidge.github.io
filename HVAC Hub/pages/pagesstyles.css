@@ -31,16 +31,16 @@ p {
 }
 .valvetype {
     display: flex;
-    width: 50%;
+    
     position: absolute;
-    left: 300px;
+    left: 200px;
     text-align: center;
     margin: 0 auto;
 
 }
-.form-control {
+.form-control-lg {
    height: 50px;
-   width: 70%;
+   width: 250px;
 }
 .nav {
     height: 100%;
