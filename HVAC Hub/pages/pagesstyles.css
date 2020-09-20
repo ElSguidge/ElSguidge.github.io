@@ -32,7 +32,7 @@ p {
 .valvetype {
     display: flex;
     position: absolute;
-    left: 135px;
+    left: 110px;
     text-align: center;
 }
 .form-control-lg {
