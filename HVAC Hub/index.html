@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" rel="stylesheet">
         <meta charset="utf-8">
@@ -88,9 +88,9 @@ HVAC Hub
 </section><br>
 <section id = "VSD-calculator">
     <div id = "pitot-holes">
-    <h2> Calculate pitot hole duct measurements (type 0 for no insulation)</h2><br>
+    <h2> Calculate pitot hole duct measurements (Enter OD duct size, type 0 if there is no insulation)</h2><br>
     <h2 id="answer-5"></h2>
-    <input type = "number" id = "duct-size" placeholder="Duct size in mm"class="mytext">
+    <input type = "number" id = "duct-size" placeholder="OD Duct size in mm"class="mytext">
     <input type = "number" id = "insulation" placeholder="Insulation in mm"class="mytext">
     <input type = "number" id = "number-of-holes" placeholder="Number of Holes"class="mytext">
     <button onclick="ductPitotHoleCalculate()"id="calc-button" class = "calc" >Calculate</button><br>
@@ -102,11 +102,23 @@ HVAC Hub
     <h2 id="answer-6"></h2>
     <input type = "number" id = "voltage" placeholder="Voltage"class="mytext">
     <input type = "number" id = "va" placeholder="VA"class="mytext">
-    <button onclick="electricalVaCalculate()"id="calc-button" class = "calc" >Calculate</button><br><br>
+    <button onclick="electricalVaCalculate()"id="calc-button" class = "calc" >Calculate</button><br>
     </div>
+</section><br>
+<section id="VSD-calculator">
+    <h2> Calculate room volume (cubic meters per minute)</h2>
+    <div class="slidecontainer">
+        <h2 id="answer-7"></h2>
+        <input type="range" min="0.1" max="100" step="0.01"value="10" class="slider" id="myRange"onchange ="cfmCalculate()">
+        <p>Length(m): <span id="demo"></span></p>
+        <input type="range" min="0.1" max="100" step="0.01"value="10" class="slider" id="widthRange"onchange ="cfmCalculate()">
+        <p>Width(m): <span id="widthOutput"></span></p>
+        <input type="range" min="0.1" max="100" step="0.01"value="10" class="slider" id="heightRange"onchange ="cfmCalculate()">
+        <p>Height(m): <span id="heightOutput"></span></p>
+      </div>
 </section>
  </body>
-    <script src="scripts/calcapp.js"></script>
+    <script src="./scripts/calcapp.js"></script>
     <script src="scripts/watercalcs.js"></script>
     
     </html>

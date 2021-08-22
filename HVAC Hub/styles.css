@@ -21,6 +21,7 @@ h1 {
 h2 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 .ribbon {
@@ -83,7 +84,8 @@ h2 {
 #answer-3,
 #answer-4,
 #answer-5,
-#answer-6 {
+#answer-6,
+#answer-7 {
     color: #D93A32;
     font-weight: bolder;
 }
@@ -101,7 +103,6 @@ img {
     border-radius: 15px;
     border-color: black;
     font-family: 'Raleway', sans-serif;
-    text-align: center;
     border: orangered;
 }
 .calc {
@@ -120,6 +121,36 @@ img {
 .calculatorcom {
     text-decoration: underline;
 }
+.slidecontainer {
+    width: 15%;
+    text-align: center;
+    position:absolute; 
+    margin-left: 750px;
+    font-weight: bold; 
+    font-size: 20px;
+  }
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #8d8b8b;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background:rgba(255, 115, 0, 0.884);
+    cursor: pointer;
+  }
+  
 
 
 
