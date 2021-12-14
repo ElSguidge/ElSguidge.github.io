@@ -87,6 +87,18 @@ HVAC Hub
     </div>
 </section><br>
 <section id = "VSD-calculator">
+    <div id = "round-flow">
+    <h2> Calculate outlet grille factor and flow factor</h2><br>
+    <h2 id="answer-8"></h2>
+    <input type = "number" id = "grillelength" placeholder="Grille length in mm"class="mytext">
+    <input type = "number" id = "grillewidth" placeholder="Grille width in mm"class="mytext">
+    <input type = "number" id = "outletmeasurement" placeholder="Outlet m/s"class="mytext">
+    <input type = "number" id = "outletpitot" placeholder="Outlet duct pitot l/s"class="mytext">
+    <button onclick="grilleFactorCalculate()"id="calc-button" class = "calc">Calculate</button><br>
+    </div>
+</section><br>
+
+<section id = "VSD-calculator">
     <div id = "pitot-holes">
     <h2> Calculate pitot hole duct measurements (Enter OD duct size, type 0 if there is no insulation)</h2><br>
     <h2 id="answer-5"></h2>
@@ -105,7 +117,7 @@ HVAC Hub
     <button onclick="electricalVaCalculate()"id="calc-button" class = "calc" >Calculate</button><br>
     </div>
 </section><br>
-<section id="VSD-calculator">
+<!-- <section id="VSD-calculator">
     <h2> Calculate room volume (cubic meters per minute)</h2>
     <div class="slidecontainer">
         <h2 id="answer-7"></h2>
@@ -116,7 +128,7 @@ HVAC Hub
         <input type="range" min="0.1" max="100" step="0.01"value="10" class="slider" id="heightRange"onchange ="cfmCalculate()">
         <p>Height(m): <span id="heightOutput"></span></p>
       </div>
-</section>
+</section> -->
  </body>
     <script src="./scripts/calcapp.js"></script>
     <script src="scripts/watercalcs.js"></script>

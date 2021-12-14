@@ -85,6 +85,25 @@ function vavCalculate() {
     document.getElementById("answer-3").innerHTML = `Box size = ${squared} cm`;
   }
 }
+function grilleFactorCalculate() {
+  var grilleLength = document.getElementById("grillelength").value;
+  var grilleWidth = document.getElementById("grillewidth").value;
+  var outlet = document.getElementById("outletmeasurement").value;
+  var pitot = document.getElementById("outletpitot").value;
+
+  var grilleArea = parseFloat(outlet) * (parseFloat(grilleLength) * parseFloat(grilleWidth / 1000));
+  var grilleFactor = parseFloat(pitot) / grilleArea;
+  var grilleFactorRounded = grilleFactor.toFixed(2);
+  var flowFactor = grilleArea * grilleFactor;
+  var flowFactorRounded = flowFactor.toFixed(2);
+  console.log(grilleArea)
+
+  // if (!isNaN(flowFactorRounded || grilleFactorRounded)) {
+    document.getElementById("answer-8").innerHTML = `Grille Factor = ${grilleFactorRounded}` + 
+    "<br/v>" + `Flow Factor = ${flowFactorRounded}`;
+  // }
+}
+
 function roundDuctCalculate() {
   var field1 = document.getElementById("diameter").value;
 
@@ -95,7 +114,7 @@ function roundDuctCalculate() {
   var roundFinalResult = finalResult.toFixed(2);
 
   if (!isNaN(finalResult)) {
-    document.getElementById("answer-4").innerHTML = `Ak = ${roundFinalResult}`;
+    document.getElementById("answer-4").innerHTML = `Ak = ${roundFinalResult} `;
   }
 }
 
@@ -115,19 +134,23 @@ function ductPitotHoleCalculate() {
 
   var myArray = [];
   var i = 0;
+  var counter = 0;
 
   while (i < strHoles) {
     myArray.push(Math.round(firstHoleSpacing + i * spacingOfHoles));
     i++;
+    counter += 1
     var spaceRound = Math.round(spacingOfHoles, 0);
+    console.log(counter)
     document.getElementById("answer-5").innerHTML =
-      `Hole spacing = ${spaceRound}` +
-      `mm` +
+      `Hole spacing = ${spaceRound}` + 
+      `mm` + 
       "<br/v>" + 
-      myArray.join("mm, " + "<br/v>") + `mm`;
+     myArray.join("mm, " + "<br/v>") + `mm`;
     console.log(myArray);
   }
 }
+
 function electricalVaCalculate() {
   var voltage = document.getElementById("voltage").value;
   var va = document.getElementById("va").value;
