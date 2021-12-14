@@ -91,8 +91,9 @@ function grilleFactorCalculate() {
   var outlet = document.getElementById("outletmeasurement").value;
   var pitot = document.getElementById("outletpitot").value;
 
-  var grilleArea = parseFloat(outlet) * (parseFloat(grilleLength) * parseFloat(grilleWidth / 1000));
-  var grilleFactor = parseFloat(pitot) / grilleArea;
+  var grilleArea = parseFloat(grilleLength) * parseFloat(grilleWidth) / 1000;
+  var grilleAk = parseFloat(outlet) * grilleArea;
+  var grilleFactor = parseFloat(pitot) / grilleAk;
   var grilleFactorRounded = grilleFactor.toFixed(2);
   var flowFactor = grilleArea * grilleFactor;
   var flowFactorRounded = flowFactor.toFixed(2);
